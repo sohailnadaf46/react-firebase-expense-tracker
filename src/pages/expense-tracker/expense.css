@@ -1,0 +1,93 @@
+.expensetracker {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  max-width: 400px;
+  width: 100%;
+}
+
+h1 {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.balance {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.balance h2 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.summary {
+  margin-bottom: 20px;
+}
+
+.summary .income, .summary .expense {
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.summary .income h3, .summary .expense h3 {
+  margin: 0;
+}
+
+.add-transaction {
+  margin-bottom: 20px;
+}
+
+.add-transaction input[type="text"],
+.add-transaction input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.add-transaction button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-transaction button:hover {
+  background-color: #45a049;
+}
+
+.transactions {
+  margin-bottom: 20px;
+}
+
+.transactions ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.transactions ul li {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.transactions ul li:last-child {
+  border-bottom: none;
+}

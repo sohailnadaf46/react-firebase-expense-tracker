@@ -1,0 +1,28 @@
+.login-page {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center; 
+  align-items: center;
+  height: 100vh; 
+}
+
+.login-page h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+  margin-bottom: 3rem;
+}
+
+.login-page button {
+  padding: 10px 20px;
+  background-color: #4285f4;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 2em;
+}
+
+.login-page button:hover {
+  background-color: #357ae8;
+}
