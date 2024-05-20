@@ -4,7 +4,7 @@ import { useGetUserInfo } from "./useGetUserInfo.js";
 
 export const UseAddtransaction = () => {
   const docCollectionRef = collection(db, "transactions"); // Reference to the Firestore collection
-  const { userId } = useGetUserInfo(); // Get the current user's ID
+  const { userId } = useGetUserInfo(); 
 
   const addTransaction = async ({ description, transactionAmount, transactionType }) => {
     try {

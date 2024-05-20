@@ -1,17 +1,14 @@
 .expensetracker {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  height: 100vh;
+  padding: 20px;
 }
 
 .container {
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-  padding: 30px;
-  max-width: 400px;
+  max-width: 800px;
   width: 100%;
+  position: relative; /* Added position relative to allow absolute positioning within */
 }
 
 h1 {
@@ -31,6 +28,8 @@ h1 {
 }
 
 .summary {
+  display: flex;
+  justify-content: space-between;
   margin-bottom: 20px;
 }
 
@@ -38,7 +37,7 @@ h1 {
   background-color: #f0f0f0;
   border-radius: 5px;
   padding: 10px;
-  margin-bottom: 10px;
+  width: 48%;
 }
 
 .summary .income h3, .summary .expense h3 {
@@ -59,7 +58,6 @@ h1 {
 }
 
 .add-transaction button {
-  display: block;
   width: 100%;
   padding: 10px;
   background-color: #4caf50;
@@ -90,4 +88,34 @@ h1 {
 
 .transactions ul li:last-child {
   border-bottom: none;
+}
+
+.profile-container {
+  position: absolute; /* Positioning absolute */
+  top: 20px; /* Adjust top position */
+  right: 20px; /* Adjust right position */
+  display: flex;
+  align-items: center;
+}
+
+.profile img {
+  width: 100px; /* Increased width for the profile photo */
+  height: 100px; /* Increased height for the profile photo */
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 20px; /* Increased margin for spacing */
+}
+
+.signout-button {
+  padding: 15px 30px; /* Increased padding for the sign-out button */
+  font-size: 18px; /* Increased font size for the sign-out button */
+  background-color: #d9534f;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.signout-button:hover {
+  background-color: #c9302c;
 }
